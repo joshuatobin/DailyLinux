@@ -15,7 +15,25 @@ You need to debug a running process on your Linux system:
   - `detach` (to safely detach)  
   - `quit` (to exit `gdb`)  
 
-## Interview Quiz  
-1. What is `gdb`, and when would you use it?  
-2. How can you debug a core dump using `gdb`?  
+## Interview Quiz
+
+1. What is `gdb`, and when would you use it?
+
+<details>
+  <summary>Show Answer</summary>
+  `gdb` is a debugger that allows you to inspect running processes, analyze core dumps, and step through code to identify bugs.
+</details>
+
+2. How can you debug a core dump using `gdb`?
+
+<details>
+  <summary>Show Answer</summary>
+  Use `gdb <program> <core>` to load the program’s binary and core file. Once inside `gdb`, you can use commands like `bt` (backtrace) to see where the program crashed.
+</details>
+
 3. What is the difference between attaching `gdb` to a running process and starting a program inside `gdb`?
+
+<details>
+  <summary>Show Answer</summary>
+  Attaching `gdb` to a running process lets you inspect it as-is, preserving its current state. Starting a program inside `gdb` runs it from the beginning, allowing you to step through its initialization and early execution.
+</details>
